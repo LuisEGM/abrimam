@@ -127,34 +127,4 @@
       return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
     }
   });
-
-  function closeModal(){
-    $(".mask").removeClass("active");
-  }
-  // Call the closeModal function on the clicks/keyboard
-  $(".closex, .mask").on("click", function(){
-    closeModal();
-  });
-
-  $(document).keyup(function(e) {
-    if (e.keyCode == 27) {
-      closeModal();
-    }
-  });
-
-  $(document).ready(function () {
-    $('.mask').addClass('active');
-    var buttonAudio = document.getElementById("aceptx");
-    var audioPlayed = false;
-    buttonAudio.addEventListener("click", () => {
-      if (!audioPlayed) {
-        var sound = document.getElementById("audio-ebook");
-        sound.muted = false;
-        sound.play();
-      }
-      audioPlayed = true;
-      closeModal();
-    })
-  })
-
 })(jQuery);
