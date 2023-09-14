@@ -19,7 +19,7 @@ VERSION:	Versoin Number
 body {
   line-height: 31px;
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   font-size: 17px;
 }
@@ -1168,6 +1168,12 @@ textarea.form-control {
   top: 10%;
   z-index: -1;
 }
+
+.modal-dialog {
+  position: absolute;
+
+}
+
 @media (max-width: 767px) {
   .contact-bg-1 {
     display: none;
