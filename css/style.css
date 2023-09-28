@@ -403,6 +403,7 @@ a:hover {
 @media (max-width: 991px) {
   .navbar-collapse {
     padding-bottom: 20px;
+    backdrop-filter: blur(15px);
   }
 }
 
